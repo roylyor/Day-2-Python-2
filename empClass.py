@@ -8,4 +8,25 @@ class Employee:
         self._emp_number = emp_number
 
     # branch1
+    # getter
+    @property #decorator for getter
+    def first_name(self):
+        return self._first_name
+    @property
+    def last_name(self):
+        return self._last_name
+    @property
+    def emp_number(self):
+        return self._emp_number
+    @property
+    def full_name(self):
+        return self.first_name + " " + self.last_name
+
+    # setter
+    @first_name.setter
+    def first_name(self, newName):
+        self._first_name = newName
+    @last_name.setter
+    def last_name(self, newLName):
+        self._last_name = newLName
   
