@@ -21,10 +21,5 @@ class Employee:
     def full_name(self):
         return self.first_name + " " + self.last_name
 
-    # setter
-    @first_name.setter
-    def first_name(self, newName):
-        self._first_name = newName
-    @last_name.setter
-    def last_name(self, newLName):
-        self._last_name = newLName
+    # remove setter
+  
